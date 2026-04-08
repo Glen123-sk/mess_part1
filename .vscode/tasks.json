@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run JUnit Tests",
+      "type": "shell",
+      "command": "javac -cp .:junit-platform-console-standalone-1.10.2.jar com/mycompany/messenger/Messenger.java com/mycompany/messenger/MessengerTest.java && java -jar junit-platform-console-standalone-1.10.2.jar --class-path . --scan-class-path",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
