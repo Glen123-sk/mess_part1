@@ -54,7 +54,7 @@ class MessengerTest {
         login.checkUserName("Kyl_1");
         login.checkPasswordComplexity("Ch&&sec@ke99!");
         assertTrue(login.loginUser("Kyl_1", "Ch&&sec@ke99!"));
-        assertEquals("Welcome Kyle, Smith it is great to see you again.", login.returnLoginStatus(true));
+        assertEquals("Welcome Kyle, Smith it is great to see you again.\n\n\n", login.returnLoginStatus(true));
     }
 
     @Test
