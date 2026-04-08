@@ -4,7 +4,7 @@
     {
       "label": "Run JUnit Tests",
       "type": "shell",
-      "command": "javac -cp .:junit-platform-console-standalone-1.10.2.jar com/mycompany/messenger/Messenger.java com/mycompany/messenger/MessengerTest.java && java -jar junit-platform-console-standalone-1.10.2.jar --class-path . --scan-class-path",
+      "command": "javac -cp .;src/main/java;src/test/java;junit-platform-console-standalone-1.10.2.jar src/main/java/messenger/Messenger.java src/test/java/messenger/MessengerTest.java -d .; java -jar .\junit-platform-console-standalone-1.10.2.jar --class-path .;src/main/java;src/test/java --scan-class-path",
       "group": {
         "kind": "test",
         "isDefault": true

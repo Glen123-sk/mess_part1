@@ -1,4 +1,4 @@
-package com.mycompany.messenger;
+package messenger;
 
 import java.util.Scanner;
 import java.util.regex.*;
@@ -56,7 +56,7 @@ class Messenger {
         // Return login status message
         public String returnLoginStatus(boolean loginSuccess) {
             if (loginSuccess) {
-                return "Welcome " + this.firstName + ", " + this.lastName + " it is great to see you again.";
+                return "Welcome " + this.firstName + ", " + this.lastName + " it is great to see you again.\n\n\n";
             } else {
                 return "Username or password incorrect, please try again.";
             }
@@ -65,6 +65,8 @@ class Messenger {
 
     // ----- MAIN METHOD -----
     public static void main(String[] args) {
+        // Print welcome banner
+        System.out.println("\n\nWELCOME TP MESSENGER\n");
         Scanner scanner = new Scanner(System.in);
 
         // Collect first and last name
